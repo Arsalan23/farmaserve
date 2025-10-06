@@ -12,7 +12,7 @@ export const CategoryCard = ({ category }: CategoryCardProps) => {
   const navigate = useNavigate();
   
   const handleClick = () => {
-    navigate(`/search?category=${category.name}`);
+    navigate(`/search?category=${category.id}`);
   };
 
   // Get the icon component from lucide-react

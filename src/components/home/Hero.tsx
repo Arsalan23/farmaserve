@@ -83,12 +83,11 @@ export const Hero = () => {
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
             <Button 
-              size="lg" 
               variant="outline"
               className="hover-scale h-14 px-8 text-lg rounded-full border-2"
               onClick={() => navigate('/role-selection')}
             >
-              Become a Pro
+              Become a Service Provider
             </Button>
           </div>
 

@@ -70,7 +70,7 @@ export const Navbar = () => {
                   onClick={() => navigate('/role-selection')}
                   className="hidden md:flex text-base"
                 >
-                  Become a Pro
+                  Become a Provider
                 </Button>
                 <Button 
                   variant="ghost"

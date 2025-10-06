@@ -51,7 +51,7 @@ export default function CustomerLayout() {
           ))}
         </nav>
 
-        <div className="absolute bottom-0 w-64 p-4 border-t bg-card">
+        <div className="absolute bottom-0 w-64 p-4 border-t bg-card space-y-2">
           <div className="flex items-center gap-3 mb-3">
             <img
               src={user?.avatar}
@@ -63,6 +63,14 @@ export default function CustomerLayout() {
               <p className="text-xs text-muted-foreground">Customer</p>
             </div>
           </div>
+          <Button
+            variant="outline"
+            className="w-full justify-start"
+            onClick={() => navigate('/')}
+          >
+            <Home className="h-4 w-4 mr-2" />
+            View Site
+          </Button>
           <Button
             variant="ghost"
             className="w-full justify-start"
