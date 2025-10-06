@@ -8,6 +8,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { ArrowLeft, Mail } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
 import { Separator } from '@/components/ui/separator';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 const Auth = () => {
   const navigate = useNavigate();
@@ -46,14 +47,16 @@ const Auth = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-accent/30 via-background to-background flex items-center justify-center p-4">
       <div className="w-full max-w-md space-y-4">
-        <Button
-          variant="ghost"
-          onClick={() => navigate('/')}
-          className="mb-4"
-        >
-          <ArrowLeft className="mr-2 h-4 w-4" />
-          Back to Home
-        </Button>
+        <div className="flex items-center justify-between mb-4">
+          <Button
+            variant="ghost"
+            onClick={() => navigate('/')}
+          >
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to Home
+          </Button>
+          <ThemeToggle />
+        </div>
 
         <Card className="shadow-2xl">
           <CardHeader className="space-y-2">

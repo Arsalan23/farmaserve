@@ -1,13 +1,15 @@
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { useAuth } from '@/contexts/AuthContext';
+import { ThemeToggle } from '@/components/theme-toggle';
 import {
   LayoutDashboard,
   FileText,
   Video,
   TrendingUp,
   LogOut,
-  Home
+  Home,
+  Crown
 } from 'lucide-react';
 
 const ProviderLayout = () => {
@@ -25,6 +27,7 @@ const ProviderLayout = () => {
     { label: 'Services', icon: FileText, path: '/provider/services' },
     { label: 'Reels', icon: Video, path: '/provider/reels' },
     { label: 'Analytics', icon: TrendingUp, path: '/provider/analytics' },
+    { label: 'Subscription', icon: Crown, path: '/provider/subscription' },
   ];
 
   return (
@@ -76,6 +79,10 @@ const ProviderLayout = () => {
                 View Site
               </Button>
             </Link>
+            <div className="flex items-center justify-between">
+              <span className="text-sm text-muted-foreground">Theme</span>
+              <ThemeToggle />
+            </div>
             <Button 
               variant="ghost" 
               className="w-full justify-start gap-2 text-destructive hover:text-destructive"

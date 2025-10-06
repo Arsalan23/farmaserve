@@ -16,7 +16,7 @@ export default function Profile() {
         <p className="text-muted-foreground mt-2">Manage your account information</p>
       </div>
 
-      <div className="max-w-2xl space-y-6">
+      <div className="space-y-6">
         {/* Profile Picture */}
         <Card>
           <CardHeader>

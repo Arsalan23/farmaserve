@@ -131,6 +131,10 @@ All colors MUST be HSL.
     @apply transition-transform duration-200 hover:scale-105;
   }
 
+  .hover-lift {
+    @apply transition-all duration-200 hover:shadow-lg hover:-translate-y-1;
+  }
+
   .animate-fade-up {
     animation: fade-up 0.6s ease-out;
   }

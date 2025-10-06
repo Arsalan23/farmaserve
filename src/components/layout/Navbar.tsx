@@ -4,6 +4,7 @@ import { Input } from '@/components/ui/input';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '@/contexts/AuthContext';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 export const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -87,6 +88,8 @@ export const Navbar = () => {
                 </Button>
               </>
             )}
+            
+            <ThemeToggle />
             
             <Button variant="ghost" size="icon" className="lg:hidden">
               <Menu className="h-6 w-6" />

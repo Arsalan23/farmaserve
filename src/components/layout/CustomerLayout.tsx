@@ -2,6 +2,7 @@ import { Outlet, NavLink, useNavigate } from 'react-router-dom';
 import { Home, Calendar, Heart, User, MessageSquare, Star, Bell, LogOut } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useAuth } from '@/contexts/AuthContext';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 export default function CustomerLayout() {
   const navigate = useNavigate();
@@ -71,6 +72,10 @@ export default function CustomerLayout() {
             <Home className="h-4 w-4 mr-2" />
             View Site
           </Button>
+          <div className="flex items-center justify-between">
+            <span className="text-sm text-muted-foreground">Theme</span>
+            <ThemeToggle />
+          </div>
           <Button
             variant="ghost"
             className="w-full justify-start"

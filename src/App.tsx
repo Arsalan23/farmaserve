@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./contexts/AuthContext";
+import { ThemeProvider } from "./components/theme-provider";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ServiceDetails from "./pages/ServiceDetails";
@@ -18,6 +19,8 @@ import AddService from "./pages/provider/AddService";
 import Reels from "./pages/provider/Reels";
 import AddReel from "./pages/provider/AddReel";
 import Analytics from "./pages/provider/Analytics";
+import Subscription from "./pages/provider/Subscription";
+import Payment from "./pages/provider/Payment";
 import CustomerLayout from "./components/layout/CustomerLayout";
 import CustomerDashboard from "./pages/customer/Dashboard";
 import Bookings from "./pages/customer/Bookings";
@@ -48,6 +51,8 @@ const AppContent = () => {
         <Route path="reels" element={<Reels />} />
         <Route path="reels/new" element={<AddReel />} />
         <Route path="analytics" element={<Analytics />} />
+        <Route path="subscription" element={<Subscription />} />
+        <Route path="payment" element={<Payment />} />
       </Route>
 
       {/* Customer Routes */}
@@ -68,15 +73,17 @@ const AppContent = () => {
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <AuthProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <AppContent />
-        </BrowserRouter>
-      </TooltipProvider>
-    </AuthProvider>
+    <ThemeProvider defaultTheme="system" storageKey="famaserv-ui-theme">
+      <AuthProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <AppContent />
+          </BrowserRouter>
+        </TooltipProvider>
+      </AuthProvider>
+    </ThemeProvider>
   </QueryClientProvider>
 );
 

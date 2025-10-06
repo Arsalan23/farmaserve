@@ -50,6 +50,31 @@ const Dashboard = () => {
           </div>
         </div>
 
+        {/* Upgrade Prompt Banner */}
+        <Card className="mb-8 bg-gradient-to-r from-primary/10 via-primary-glow/10 to-accent/10 border-primary/20">
+          <CardContent className="p-6">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                  <TrendingUp className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg mb-1">Boost Your Visibility</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Get 3x more customers with a premium subscription. Featured profiles get 10x more inquiries!
+                  </p>
+                </div>
+              </div>
+              <Link to="/provider/subscription">
+                <Button className="whitespace-nowrap">
+                  <Star className="h-4 w-4 mr-2" />
+                  View Plans
+                </Button>
+              </Link>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Stats Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           {stats.map((stat, index) => (
