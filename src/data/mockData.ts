@@ -197,6 +197,46 @@ export const mockProviders: Provider[] = [
     completedJobs: 450,
     memberSince: '2020-01-15',
     verified: true,
+    certificates: ['ASE Certified', 'IDA Certified Detailer', 'Ceramic Pro Certified'],
+    languages: ['English', 'Spanish'],
+    responseTime: 'within 1 hour',
+    emergencyService: true,
+    acceptedPaymentMethods: ['Credit Card', 'PayPal', 'Venmo', 'Cash'],
+    availability: {
+      monday: '9:00 AM - 6:00 PM',
+      tuesday: '9:00 AM - 6:00 PM',
+      wednesday: '9:00 AM - 6:00 PM',
+      thursday: '9:00 AM - 6:00 PM',
+      friday: '9:00 AM - 8:00 PM',
+      saturday: '10:00 AM - 4:00 PM',
+      sunday: 'Closed'
+    },
+    achievements: [
+      {
+        id: 'ach1',
+        title: 'On Time Champion',
+        description: 'Completed 50 jobs on time in a row',
+        icon: 'Clock',
+        earnedAt: '2024-01-10',
+        category: 'performance'
+      },
+      {
+        id: 'ach2',
+        title: 'Top Rated',
+        description: 'Maintained 4.9+ rating for 6 months',
+        icon: 'Star',
+        earnedAt: '2024-01-05',
+        category: 'trust'
+      },
+      {
+        id: 'ach3',
+        title: 'Community Favorite',
+        description: 'Received 100+ positive reviews',
+        icon: 'Heart',
+        earnedAt: '2023-12-20',
+        category: 'engagement'
+      }
+    ],
     reels: [
       {
         id: 'r1',
@@ -240,6 +280,38 @@ export const mockProviders: Provider[] = [
     completedJobs: 320,
     memberSince: '2019-06-20',
     verified: true,
+    certificates: ['ISSA Certified', 'Green Seal Certified', 'IICRC Certified'],
+    languages: ['English', 'Mandarin'],
+    responseTime: 'within 30 minutes',
+    emergencyService: false,
+    acceptedPaymentMethods: ['Credit Card', 'PayPal', 'Cash', 'Check'],
+    availability: {
+      monday: '8:00 AM - 5:00 PM',
+      tuesday: '8:00 AM - 5:00 PM',
+      wednesday: '8:00 AM - 5:00 PM',
+      thursday: '8:00 AM - 5:00 PM',
+      friday: '8:00 AM - 5:00 PM',
+      saturday: '9:00 AM - 3:00 PM',
+      sunday: 'Closed'
+    },
+    achievements: [
+      {
+        id: 'ach4',
+        title: 'Eco Warrior',
+        description: 'Used eco-friendly products for 100+ jobs',
+        icon: 'Leaf',
+        earnedAt: '2024-01-08',
+        category: 'trust'
+      },
+      {
+        id: 'ach5',
+        title: 'Always Responsive',
+        description: 'Responded to all inquiries within 1 hour',
+        icon: 'MessageCircle',
+        earnedAt: '2024-01-01',
+        category: 'engagement'
+      }
+    ],
     reels: [
       {
         id: 'r3',
@@ -265,6 +337,38 @@ export const mockProviders: Provider[] = [
     completedJobs: 580,
     memberSince: '2018-03-10',
     verified: true,
+    certificates: ['Master Plumber License', 'Backflow Certified', 'Gas Line Certified'],
+    languages: ['English', 'Spanish'],
+    responseTime: 'within 15 minutes',
+    emergencyService: true,
+    acceptedPaymentMethods: ['Credit Card', 'Debit Card', 'Cash', 'Check'],
+    availability: {
+      monday: '24/7 Emergency',
+      tuesday: '24/7 Emergency',
+      wednesday: '24/7 Emergency',
+      thursday: '24/7 Emergency',
+      friday: '24/7 Emergency',
+      saturday: '24/7 Emergency',
+      sunday: '24/7 Emergency'
+    },
+    achievements: [
+      {
+        id: 'ach6',
+        title: 'Emergency Hero',
+        description: 'Completed 200+ emergency calls',
+        icon: 'Siren',
+        earnedAt: '2023-12-15',
+        category: 'performance'
+      },
+      {
+        id: 'ach7',
+        title: '24/7 Available',
+        description: 'Always available for emergencies',
+        icon: 'Clock',
+        earnedAt: '2023-11-20',
+        category: 'trust'
+      }
+    ],
     reels: [],
     stories: []
   },
@@ -280,6 +384,30 @@ export const mockProviders: Provider[] = [
     completedJobs: 290,
     memberSince: '2020-08-22',
     verified: true,
+    certificates: ['EPA Lead-Safe Certified', 'PDCA Certified'],
+    languages: ['English', 'Spanish'],
+    responseTime: 'within 2 hours',
+    emergencyService: false,
+    acceptedPaymentMethods: ['Credit Card', 'PayPal', 'Zelle', 'Cash'],
+    availability: {
+      monday: '7:00 AM - 5:00 PM',
+      tuesday: '7:00 AM - 5:00 PM',
+      wednesday: '7:00 AM - 5:00 PM',
+      thursday: '7:00 AM - 5:00 PM',
+      friday: '7:00 AM - 5:00 PM',
+      saturday: '8:00 AM - 2:00 PM',
+      sunday: 'Closed'
+    },
+    achievements: [
+      {
+        id: 'ach8',
+        title: 'Color Expert',
+        description: 'Completed 50+ color consultations',
+        icon: 'Palette',
+        earnedAt: '2024-01-12',
+        category: 'trust'
+      }
+    ],
     reels: [
       {
         id: 'r4',
@@ -305,6 +433,38 @@ export const mockProviders: Provider[] = [
     completedJobs: 420,
     memberSince: '2019-11-05',
     verified: true,
+    certificates: ['Licensed Cosmetologist', 'Bridal Makeup Specialist', 'Advanced Hair Styling'],
+    languages: ['English', 'Hindi', 'Spanish'],
+    responseTime: 'within 1 hour',
+    emergencyService: false,
+    acceptedPaymentMethods: ['Credit Card', 'Venmo', 'Cash App', 'Cash'],
+    availability: {
+      monday: '9:00 AM - 7:00 PM',
+      tuesday: '9:00 AM - 7:00 PM',
+      wednesday: '9:00 AM - 7:00 PM',
+      thursday: '9:00 AM - 7:00 PM',
+      friday: '9:00 AM - 9:00 PM',
+      saturday: '8:00 AM - 9:00 PM',
+      sunday: '10:00 AM - 6:00 PM'
+    },
+    achievements: [
+      {
+        id: 'ach9',
+        title: 'Bridal Beauty Expert',
+        description: 'Completed 100+ bridal services',
+        icon: 'Crown',
+        earnedAt: '2024-01-11',
+        category: 'performance'
+      },
+      {
+        id: 'ach10',
+        title: 'Perfect 5.0',
+        description: 'Maintained perfect 5.0 rating',
+        icon: 'Award',
+        earnedAt: '2024-01-01',
+        category: 'trust'
+      }
+    ],
     reels: [
       {
         id: 'r5',
@@ -330,6 +490,30 @@ export const mockProviders: Provider[] = [
     completedJobs: 180,
     memberSince: '2021-02-14',
     verified: true,
+    certificates: ['Landscape Architect License', 'Irrigation Certified', 'Sustainable Landscaping'],
+    languages: ['English', 'Korean'],
+    responseTime: 'within 3 hours',
+    emergencyService: false,
+    acceptedPaymentMethods: ['Credit Card', 'Check', 'Bank Transfer'],
+    availability: {
+      monday: '8:00 AM - 6:00 PM',
+      tuesday: '8:00 AM - 6:00 PM',
+      wednesday: '8:00 AM - 6:00 PM',
+      thursday: '8:00 AM - 6:00 PM',
+      friday: '8:00 AM - 6:00 PM',
+      saturday: '9:00 AM - 4:00 PM',
+      sunday: 'Closed'
+    },
+    achievements: [
+      {
+        id: 'ach11',
+        title: 'Garden Master',
+        description: 'Designed 50+ beautiful gardens',
+        icon: 'TreeDeciduous',
+        earnedAt: '2023-12-30',
+        category: 'performance'
+      }
+    ],
     reels: [],
     stories: []
   },
@@ -345,6 +529,38 @@ export const mockProviders: Provider[] = [
     completedJobs: 340,
     memberSince: '2020-05-18',
     verified: true,
+    certificates: ['CompTIA A+', 'Network+', 'Apple Certified Mac Technician'],
+    languages: ['English'],
+    responseTime: 'within 1 hour',
+    emergencyService: true,
+    acceptedPaymentMethods: ['Credit Card', 'PayPal', 'Venmo', 'Apple Pay'],
+    availability: {
+      monday: '9:00 AM - 8:00 PM',
+      tuesday: '9:00 AM - 8:00 PM',
+      wednesday: '9:00 AM - 8:00 PM',
+      thursday: '9:00 AM - 8:00 PM',
+      friday: '9:00 AM - 8:00 PM',
+      saturday: '10:00 AM - 6:00 PM',
+      sunday: '12:00 PM - 5:00 PM'
+    },
+    achievements: [
+      {
+        id: 'ach12',
+        title: 'Tech Guru',
+        description: 'Solved 500+ tech problems',
+        icon: 'Cpu',
+        earnedAt: '2024-01-07',
+        category: 'performance'
+      },
+      {
+        id: 'ach13',
+        title: 'Fast Responder',
+        description: 'Always responds within 1 hour',
+        icon: 'Zap',
+        earnedAt: '2023-12-25',
+        category: 'engagement'
+      }
+    ],
     reels: [],
     stories: []
   }

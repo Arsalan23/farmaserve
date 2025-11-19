@@ -1,8 +1,8 @@
-import { Search, Menu } from 'lucide-react';
+import { Search, Menu, Users, HelpCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '@/contexts/AuthContext';
 import { ThemeToggle } from '@/components/theme-toggle';
 
@@ -43,7 +43,19 @@ export const Navbar = () => {
             </form>
           </div>
 
-          {/* Navigation */}
+          {/* Navigation Links */}
+          <nav className="hidden md:flex items-center gap-4 mr-4">
+            <Link to="/community" className="text-foreground/80 hover:text-foreground transition-colors flex items-center gap-1">
+              <Users className="h-4 w-4" />
+              <span>Community</span>
+            </Link>
+            <Link to="/support" className="text-foreground/80 hover:text-foreground transition-colors flex items-center gap-1">
+              <HelpCircle className="h-4 w-4" />
+              <span>Support</span>
+            </Link>
+          </nav>
+
+          {/* User Actions */}
           <div className="flex items-center gap-2">
             {user ? (
               <>

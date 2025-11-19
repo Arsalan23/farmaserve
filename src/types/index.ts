@@ -45,6 +45,68 @@ export interface Provider {
   verified: boolean;
   reels: Reel[];
   stories: Story[];
+  certificates?: string[];
+  languages?: string[];
+  responseTime?: string;
+  availability?: {
+    monday?: string;
+    tuesday?: string;
+    wednesday?: string;
+    thursday?: string;
+    friday?: string;
+    saturday?: string;
+    sunday?: string;
+  };
+  achievements?: Achievement[];
+  emergencyService?: boolean;
+  acceptedPaymentMethods?: string[];
+}
+
+export interface Achievement {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+  earnedAt: string;
+  category: 'trust' | 'performance' | 'engagement';
+}
+
+export interface Booking {
+  id: string;
+  serviceId: string;
+  providerId: string;
+  customerId: string;
+  customerName: string;
+  date: string;
+  time: string;
+  status: 'pending' | 'confirmed' | 'completed' | 'cancelled';
+  price: number;
+  location: string;
+}
+
+export interface Notification {
+  id: string;
+  userId: string;
+  title: string;
+  message: string;
+  type: 'booking' | 'review' | 'message' | 'promo' | 'system';
+  read: boolean;
+  createdAt: string;
+  actionUrl?: string;
+}
+
+export interface CommunityStory {
+  id: string;
+  userId: string;
+  userName: string;
+  userAvatar: string;
+  userType: 'provider' | 'customer';
+  content: string;
+  images?: string[];
+  likes: number;
+  comments: number;
+  createdAt: string;
+  category: 'achievement' | 'testimonial' | 'milestone' | 'community';
 }
 
 export interface Reel {

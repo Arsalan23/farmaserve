@@ -21,6 +21,8 @@ import AddReel from "./pages/provider/AddReel";
 import Analytics from "./pages/provider/Analytics";
 import Subscription from "./pages/provider/Subscription";
 import Payment from "./pages/provider/Payment";
+import CommunityStories from "./pages/CommunityStories";
+import Support from "./pages/Support";
 import CustomerLayout from "./components/layout/CustomerLayout";
 import CustomerDashboard from "./pages/customer/Dashboard";
 import Bookings from "./pages/customer/Bookings";
@@ -64,6 +66,10 @@ const AppContent = () => {
         <Route path="reviews" element={<CustomerReviews />} />
         <Route path="profile" element={<CustomerProfile />} />
       </Route>
+
+      {/* Public Routes */}
+      <Route path="/community" element={<CommunityStories />} />
+      <Route path="/support" element={<Support />} />
       
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />

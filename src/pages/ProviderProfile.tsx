@@ -117,7 +117,7 @@ export default function ProviderProfile() {
       <div className="min-h-screen bg-background">
         <Navbar />
 
-        <main className="pt-4">
+        <main>
           {/* Profile Header */}
           <section className="bg-gradient-to-br from-primary/10 via-primary/5 to-background">
             <div className="container mx-auto px-4 py-12">

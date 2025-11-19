@@ -56,7 +56,7 @@ export default function SearchResults() {
     <div className="min-h-screen bg-background">
       <Navbar />
       
-      <main className="pt-4">
+      <main>
         {/* Search Bar */}
         <section className="bg-gradient-to-br from-primary/10 via-primary/5 to-background py-8 border-b">
           <div className="container mx-auto px-4">
